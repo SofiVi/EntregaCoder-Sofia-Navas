@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4;
+    background-color: #efefef;
+}
+
+:root{
+    --menu-speed:0.75s;
+    --primary-color: rgba(247, 200, 201, 0.644);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+}
+
+@media screen and (max-width: 600px) {
+        .header2 {
+        display: none; }
+
+        /*.footer{
+            position: fixed;
+        }*/
+       
+        .indexContainer {
+            padding: 0px;
+            display: grid;
+            padding: 0px;
+            margin: 0%;
+            width: 100vw;
+            grid-template-columns: repeat(2, auto);
+            grid-template-areas:
+        
+           "indexWallpaper indexWallpaper"
+           "detoxLife detoxLife"
+           "superfoods superfoods"
+           "footer footer"; 
+         }
+
+        .calendarioContainer{
+
+            padding: 0px;
+            display: grid;
+            padding: 0px;
+            margin: 0%;
+            width: 100vw;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas:
+        
+           
+           "calendarWallpaper calendarWallpaper"
+           "calendarTitle calendarTitle"
+           "calendarCards calendarCards"
+           "footer footer"; 
+            
+        }
+
+
+
+
+    }
+
+    @media screen and  (max-width: 1023px) {
+
+            .header2 {
+            display: none; }
+
+            .indexContainer {
+                padding: 0px;
+                display: grid;
+                padding: 0px;
+                margin: 0%;
+                width: 100vw;
+                grid-template-columns: repeat(2, auto);
+                grid-template-areas:
+            
+               "indexWallpaper indexWallpaper"
+               "detoxLife detoxLife"
+               "superfoods superfoods"
+               "footer footer"; 
+             }
+
+             .calendarioContainer{
+                padding: 0px;
+                display: grid;
+                padding: 0px;
+                margin: 0%;
+                width: 100vw;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(4,auto);
+                grid-template-areas:
+            
+               
+               "calendarWallpaper calendarWallpaper"
+               "calendarTitle calendarTitle"
+               "calendarCards calendarCards"
+               "footer footer"; 
+             }
+
+        
+    }
+
+     
+  
+  @media screen and (min-width: 1024px) {
+    .menuWrap{
+        display: none;
+    }
+    .indexContainer {
+   
+        padding: 0px;
+        display: grid;
+        padding: 0px;
+        margin: 0%;
+        width: 100%; 
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "gridHeader gridHeader gridHeader"
+        "indexWallpaper indexWallpaper indexWallpaper "
+        "detoxLife superfoods superfoods"
+        "footer footer footer"; 
+    }
+
+    .indexWallpaper{
+        width: 100%;
+    }
+
+    .calendarWallpaper{
+        width: 100%;
+    }
+
+    .calendarioContainer{
+        padding: 0px;
+        display: grid;
+        padding: 0px;
+        margin: 0%;
+        width: 100vw;
+        grid-template-columns: repeat(5, auto);
+        grid-template-areas:
+    
+        "gridHeader gridHeader gridHeader"
+        "calendarWallpaper calendarWallpaper calendarWallpaper "
+        "calendarTitle calendarTitle calendarTitle"
+        "calendarCards calendarCards calendarCards"
+        "footer footer footer"; 
+    }
+
+    
+    
+  }

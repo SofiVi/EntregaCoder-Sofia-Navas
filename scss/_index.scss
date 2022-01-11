@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+
+
+
+.container{
+        grid-area: detoxLife;
+        font-family: 'Outfit', sans-serif;
+        font-style: normal;
+        font-size: 1.3rem;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        background-color: aliceblue; 
+        
+
+
+        .indexCard{
+            flex-direction: row;
+            align-content: center; 
+            align-items: center;
+            background: aliceblue;
+        
+        }
+
+
+}
+
+.container2{
+    grid-area: superfoods;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: aliceblue; 
+    
+
+
+    .indexCard{
+        flex-direction: row;
+        align-content: center; 
+        align-items: center;
+        background: aliceblue;
+    
+    }
+
+
+}
+
+.indexWallpaper{
+    grid-area: indexWallpaper;
+}
+
+
+
+
+
+

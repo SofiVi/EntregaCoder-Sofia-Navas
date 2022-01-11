@@ -1,0 +1,49 @@
+.slider {
+    grid-area: slider;
+    overflow: hidden;
+    width: 100vw;
+    
+    margin:10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    ul{margin: 0;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      animation: cambio 20s infinite;
+
+    }
+
+    li {
+      list-style: none;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 0%; }
+
+    img {
+      width: 100vw;
+      height: 40vh; }
+
+   }
+  
+  
+  
+  
+  @keyframes cambio {
+    0% {
+      margin-left: 0%; }
+    2% {
+      margin-left: 0%; }
+    25% {
+      margin-left: -100%; }
+    45% {
+      margin-left: -100%; }
+    50% {
+      margin-left: -200%; }
+    70% {
+      margin-left: -200%; } }
+  

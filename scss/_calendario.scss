@@ -1,0 +1,60 @@
+.calendarioContainer{
+    display: grid;
+}
+
+.calendarWallpaper{
+    grid-area: calendarWallpaper;
+}
+
+.calendarTitle{
+    grid-area: calendarTitle;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+.calendarCard{
+ 
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: solid 2px;
+  border-color: rgb(205, 216, 226);
+  border-radius: 35px 0px 35px 0px;
+  width: 400px;
+  height: 600px;
+  padding: 10 px;
+  list-style: none;
+  overflow: auto;
+  text-align: center;
+  background-color: aliceblue; 
+    
+  img {
+      margin: 15px;
+
+ }
+ p{
+     size: 2rem;
+     margin: 15px;
+ }
+
+
+
+}
+
+.calendarCards{
+    grid-area: calendarCards;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+

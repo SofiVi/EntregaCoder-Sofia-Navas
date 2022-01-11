@@ -1,0 +1,27 @@
+.footer {
+   /* font-family: 'Outfit', sans-serif;
+    font-style: normal;*/
+   
+   grid-area: footer;
+
+   position:initial;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: var(--primary-color);
+   color: white;
+   text-align: center;
+   padding: 0.5rem;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: space-around;
+   height:fit-content;
+
+     li {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px; }
+}
