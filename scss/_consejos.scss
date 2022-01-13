@@ -1,0 +1,50 @@
+$bg1: rgb(143, 170, 194);
+$color1: aliceblue;
+$borderColor1:rgb(143, 170, 194);
+$bg2: rgb(186, 156, 201);
+$color2: rgb(237, 212, 240);
+$borderColor2:rgb(172, 145, 187);
+
+
+@mixin cardStyle ($bg, $color,$borderColor){
+    background-color: $bg;
+    color: $color;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: solid 2px;
+    width: 95%;
+    height:inherit;
+    padding: 10 px;
+    text-align: center;
+    box-shadow: 10px 10px 8px #888888;
+    align-items: center;
+    margin: 50px;
+
+    img {
+        margin: 1.5rem;
+        float: left;
+ }
+    p{
+        
+        margin: 0.8rem;
+ }
+
+}
+
+.card-1{
+    @include cardStyle($bg1, $color1,$borderColor1)
+}
+
+.card-2{
+    @include cardStyle($bg2, $color2,$borderColor2)
+}
+
+.consejosTitle{
+    size: inherit;
+    color: rgb(143, 170, 194);
+    text-align: center;
+    margin-top: 15px;
+}
+
+

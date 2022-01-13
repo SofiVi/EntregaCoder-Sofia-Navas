@@ -108,7 +108,7 @@
 
 .menuWrap .menu > div > div > ul > li {
   list-style: none;
-  color: grey;
+  color: black;
   font-size: 1.5rem;
   padding: 1rem; }
 
@@ -160,30 +160,68 @@ body {
   --primary-color: rgba(247, 200, 201, 0.644);
   --overlay-color: rgba(24, 39, 51, 0.85); }
 
-@media screen and (max-width: 600px) {
-  .header2 {
-    display: none; }
-  /*.footer{
-            position: fixed;
-        }*/
-  .indexContainer {
-    padding: 0px;
-    display: grid;
-    padding: 0px;
-    margin: 0%;
-    width: 100vw;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: "indexWallpaper indexWallpaper" "detoxLife detoxLife" "superfoods superfoods" "footer footer"; }
-  .calendarioContainer {
-    padding: 0px;
-    display: grid;
-    padding: 0px;
-    margin: 0%;
-    width: 100vw;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; } }
+/*@media screen and (max-width: 600px) {
+        
+       
+        .indexContainer {
+            padding: 0px;
+            display: grid;
+            padding: 0px;
+            margin: 0%;
+            width: 100vw;
+            grid-template-columns: repeat(2, auto);
+            grid-template-areas:
+        
+           "indexWallpaper indexWallpaper"
+           "detoxLife detoxLife"
+           "superfoods superfoods"
+           "footer footer"; 
+         }
 
+        .calendarioContainer{
+
+            padding: 0px;
+            display: grid;
+            padding: 0px;
+            margin: 0%;
+            width: 100vw;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas:
+        
+           
+           "calendarWallpaper calendarWallpaper"
+           "calendarTitle calendarTitle"
+           "calendarCards calendarCards"
+           "footer footer"; 
+            
+        }
+
+        .consejosContainer{
+
+            .card-1{
+                flex-wrap: wrap;
+                img {
+                    margin: 1.5rem;
+                    width: 3rem;
+                    
+            
+             }
+        
+            }
+            .card-2 {
+                flex-wrap: wrap;
+                img {
+                    margin: 1.5rem;
+                    width: 3rem;
+                    
+             }
+            
+            }
+        }
+
+        
+    } */
 @media screen and (max-width: 1023px) {
   .header2 {
     display: none; }
@@ -203,7 +241,15 @@ body {
     width: 100vw;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; } }
+    grid-template-areas: "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; }
+  .consejosContainer .card-1 img {
+    margin: 0.2rem;
+    width: 20rem;
+    float: left; }
+  .consejosContainer .card-2 img {
+    margin: 0.2rem;
+    width: 20rem;
+    float: left; } }
 
 @media screen and (min-width: 1024px) {
   .menuWrap {
@@ -228,7 +274,17 @@ body {
     margin: 0%;
     width: 100vw;
     grid-template-columns: repeat(5, auto);
-    grid-template-areas: "gridHeader gridHeader gridHeader" "calendarWallpaper calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle calendarTitle" "calendarCards calendarCards calendarCards" "footer footer footer"; } }
+    grid-template-areas: "gridHeader gridHeader gridHeader" "calendarWallpaper calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle calendarTitle" "calendarCards calendarCards calendarCards" "footer footer footer"; }
+  .consejosContainer .card-1 {
+    display: flex; }
+    .consejosContainer .card-1 img {
+      margin: 0.2rem;
+      width: 20rem; }
+  .consejosContainer .card-2 {
+    display: flex; }
+    .consejosContainer .card-2 img {
+      margin: 0.2rem;
+      width: 20rem; } }
 
 * {
   margin: 0;
@@ -289,7 +345,7 @@ body {
   background: var(--primary-color);
   color: white;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0;
   display: flex;
   align-items: center;
   align-content: center;
@@ -370,7 +426,8 @@ body {
   list-style: none;
   overflow: auto;
   text-align: center;
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  box-shadow: 10px 10px 8px #888888; }
   .calendarCard img {
     margin: 15px; }
   .calendarCard p {
@@ -386,3 +443,49 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 50px; }
+
+.card-1 {
+  background-color: #8faac2;
+  color: aliceblue;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: solid 2px;
+  width: 95%;
+  height: inherit;
+  padding: 10 px;
+  text-align: center;
+  box-shadow: 10px 10px 8px #888888;
+  align-items: center;
+  margin: 50px; }
+  .card-1 img {
+    margin: 1.5rem;
+    float: left; }
+  .card-1 p {
+    margin: 0.8rem; }
+
+.card-2 {
+  background-color: #ba9cc9;
+  color: #edd4f0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: solid 2px;
+  width: 95%;
+  height: inherit;
+  padding: 10 px;
+  text-align: center;
+  box-shadow: 10px 10px 8px #888888;
+  align-items: center;
+  margin: 50px; }
+  .card-2 img {
+    margin: 1.5rem;
+    float: left; }
+  .card-2 p {
+    margin: 0.8rem; }
+
+.consejosTitle {
+  size: inherit;
+  color: #8faac2;
+  text-align: center;
+  margin-top: 15px; }

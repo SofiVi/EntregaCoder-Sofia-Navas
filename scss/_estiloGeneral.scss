@@ -16,13 +16,8 @@ body {
     --overlay-color: rgba(24, 39, 51, 0.85);
 }
 
-@media screen and (max-width: 600px) {
-        .header2 {
-        display: none; }
-
-        /*.footer{
-            position: fixed;
-        }*/
+/*@media screen and (max-width: 600px) {
+        
        
         .indexContainer {
             padding: 0px;
@@ -58,12 +53,33 @@ body {
             
         }
 
+        .consejosContainer{
 
+            .card-1{
+                flex-wrap: wrap;
+                img {
+                    margin: 1.5rem;
+                    width: 3rem;
+                    
+            
+             }
+        
+            }
+            .card-2 {
+                flex-wrap: wrap;
+                img {
+                    margin: 1.5rem;
+                    width: 3rem;
+                    
+             }
+            
+            }
+        }
 
+        
+    } */
 
-    }
-
-    @media screen and  (max-width: 1023px) {
+    @media screen  and  (max-width: 1023px) {
 
             .header2 {
             display: none; }
@@ -100,6 +116,30 @@ body {
                "footer footer"; 
              }
 
+             .consejosContainer{
+
+        
+
+                .card-1{
+                    
+                    img {
+                        margin: 0.2rem;
+                        width: 20rem; 
+                        float: left; 
+                
+                 }
+                }
+                .card-2 {
+                    
+                    img {
+                        margin: 0.2rem;
+                        width: 20rem;
+                        float: left;
+                        
+                
+                 }
+                }
+            }
         
     }
 
@@ -148,7 +188,29 @@ body {
         "calendarCards calendarCards calendarCards"
         "footer footer footer"; 
     }
+    .consejosContainer{
 
+        .card-1{
+            display: flex;
+            
+            img {
+                margin: 0.2rem;
+                width: 20rem;  
+        
+         }
+        }
+        .card-2 {
+            display: flex;
+            
+            img {
+                margin: 0.2rem;
+                width: 20rem;
+                
+        
+         }
+        }
     
     
+  }
+
   }
