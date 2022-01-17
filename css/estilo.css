@@ -32,7 +32,7 @@
   position: relative;
   width: 100%;
   height: 3px;
-  background-color: gray;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,6 +109,7 @@
 .menuWrap .menu > div > div > ul > li {
   list-style: none;
   color: black;
+  font-weight: bolder;
   font-size: 1.5rem;
   padding: 1rem; }
 
@@ -126,13 +127,17 @@
   height: fit-content;
   padding: 2rem;
   background: var(--primary-color);
+  background-image: url(../img/logo.png);
+  background-size: 10rem;
+  background-repeat: no-repeat;
+  background-position-x: left;
   display: flex;
   align-items: center;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   align-content: center;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
   .header2 a {
     padding: 14 16px;
     text-decoration: none;
@@ -141,6 +146,19 @@
     color: #717a83; }
   .header2 a:hover {
     font-weight: bold; }
+
+.header3 {
+  position: relative;
+  top: 0;
+  left: 60px;
+  z-index: 1;
+  width: 100%;
+  height: 5rem;
+  padding: 2rem;
+  background-image: url(../img/logo.png);
+  background-size: 8rem;
+  background-repeat: no-repeat;
+  background-position-x: left; }
 
 .gridHeader {
   grid-area: gridHeader; }
@@ -151,119 +169,68 @@
   box-sizing: border-box; }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Outfit', sans-serif;
   line-height: 1.4;
   background-color: #efefef; }
 
 :root {
   --menu-speed:0.75s;
-  --primary-color: rgba(247, 200, 201, 0.644);
+  --primary-color: rgba(247, 200, 201, 0.808);
   --overlay-color: rgba(24, 39, 51, 0.85); }
 
-/*@media screen and (max-width: 600px) {
-        
-       
-        .indexContainer {
-            padding: 0px;
-            display: grid;
-            padding: 0px;
-            margin: 0%;
-            width: 100vw;
-            grid-template-columns: repeat(2, auto);
-            grid-template-areas:
-        
-           "indexWallpaper indexWallpaper"
-           "detoxLife detoxLife"
-           "superfoods superfoods"
-           "footer footer"; 
-         }
+.header3 {
+  grid-area: header3; }
 
-        .calendarioContainer{
-
-            padding: 0px;
-            display: grid;
-            padding: 0px;
-            margin: 0%;
-            width: 100vw;
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(4,auto);
-            grid-template-areas:
-        
-           
-           "calendarWallpaper calendarWallpaper"
-           "calendarTitle calendarTitle"
-           "calendarCards calendarCards"
-           "footer footer"; 
-            
-        }
-
-        .consejosContainer{
-
-            .card-1{
-                flex-wrap: wrap;
-                img {
-                    margin: 1.5rem;
-                    width: 3rem;
-                    
-            
-             }
-        
-            }
-            .card-2 {
-                flex-wrap: wrap;
-                img {
-                    margin: 1.5rem;
-                    width: 3rem;
-                    
-             }
-            
-            }
-        }
-
-        
-    } */
 @media screen and (max-width: 1023px) {
   .header2 {
     display: none; }
   .indexContainer {
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
     margin: 0%;
     width: 100vw;
     grid-template-columns: repeat(2, auto);
-    grid-template-areas: "indexWallpaper indexWallpaper" "detoxLife detoxLife" "superfoods superfoods" "footer footer"; }
+    grid-template-areas: "header3 header3" "indexWallpaper indexWallpaper" "detoxLife detoxLife" "superfoods superfoods" "footer footer"; }
   .calendarioContainer {
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
     margin: 0%;
     width: 100vw;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; }
-  .consejosContainer .card-1 img {
-    margin: 0.2rem;
-    width: 20rem;
-    float: left; }
-  .consejosContainer .card-2 img {
-    margin: 0.2rem;
-    width: 20rem;
-    float: left; }
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header3 header3" "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; }
+  .consejosContainer {
+    font-family: 'Outfit', sans-serif; }
+    .consejosContainer .card-1 img {
+      margin: 0.2rem;
+      width: 20rem;
+      float: left; }
+    .consejosContainer .card-2 img {
+      margin: 0.2rem;
+      width: 20rem;
+      float: left; }
   .recetasContainer {
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
     margin: 0%;
     width: 100vw;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle" "reicipeCards reicipeCards" "footer footer"; } }
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header3 header3" "reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle" "reicipeCards reicipeCards" "footer footer"; } }
 
 @media screen and (min-width: 1024px) {
+  .header3 {
+    display: none; }
   .menuWrap {
     display: none; }
   .indexContainer {
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
@@ -277,6 +244,7 @@ body {
   .calendarWallpaper {
     width: 100%; }
   .calendarioContainer {
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
@@ -284,17 +252,20 @@ body {
     width: 100vw;
     grid-template-columns: repeat(5, auto);
     grid-template-areas: "gridHeader gridHeader gridHeader" "calendarWallpaper calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle calendarTitle" "calendarCards calendarCards calendarCards" "footer footer footer"; }
-  .consejosContainer .card-1 {
-    display: flex; }
-    .consejosContainer .card-1 img {
-      margin: 0.2rem;
-      width: 20rem; }
-  .consejosContainer .card-2 {
-    display: flex; }
-    .consejosContainer .card-2 img {
-      margin: 0.2rem;
-      width: 20rem; }
+  .consejosContainer {
+    font-family: 'Outfit', sans-serif; }
+    .consejosContainer .card-1 {
+      display: flex; }
+      .consejosContainer .card-1 img {
+        margin: 0.2rem;
+        width: 20rem; }
+    .consejosContainer .card-2 {
+      display: flex; }
+      .consejosContainer .card-2 img {
+        margin: 0.2rem;
+        width: 20rem; }
   .recetasContainer {
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
@@ -352,8 +323,6 @@ body {
   grid-area: indexWallpaper; }
 
 .footer {
-  /* font-family: 'Outfit', sans-serif;
-    font-style: normal;*/
   grid-area: footer;
   position: initial;
   left: 0;
@@ -362,7 +331,7 @@ body {
   background: var(--primary-color);
   color: white;
   text-align: center;
-  padding: 0;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   align-content: center;
@@ -420,7 +389,7 @@ body {
 .calendarWallpaper {
   grid-area: calendarWallpaper; }
 
-.calendarTitle, .reciepesTitle {
+.calendarTitle, .reciepesTitle, .detoxTitle {
   grid-area: calendarTitle;
   display: flex;
   flex-direction: row;
@@ -430,7 +399,7 @@ body {
   align-items: center;
   margin: 50px; }
 
-.calendarCard, .reciepeCard, .reciepe {
+.calendarCard, .reciepeCard, .reciepe, .detoxContainer {
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
@@ -445,9 +414,9 @@ body {
   text-align: center;
   background-color: aliceblue;
   box-shadow: 10px 10px 8px #888888; }
-  .calendarCard img, .reciepeCard img, .reciepe img {
+  .calendarCard img, .reciepeCard img, .reciepe img, .detoxContainer img {
     margin: 15px; }
-  .calendarCard p, .reciepeCard p, .reciepe p {
+  .calendarCard p, .reciepeCard p, .reciepe p, .detoxContainer p {
     size: 2rem;
     margin: 15px; }
 
@@ -465,18 +434,20 @@ body {
   background-color: #8faac2;
   color: aliceblue;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 0%;
   margin-left: 20px;
   border: solid 2px;
-  width: 95%;
+  width: 90%;
   height: inherit;
+  min-height: 340px;
+  min-width: 330px;
   padding: 10 px;
   text-align: center;
   box-shadow: 10px 10px 8px #888888;
   align-items: center;
   margin: 50px; }
   .card-1 img {
-    margin: 1.5rem;
+    margin: 1rem;
     float: left; }
   .card-1 p {
     margin: 0.8rem; }
@@ -485,18 +456,20 @@ body {
   background-color: #ba9cc9;
   color: #edd4f0;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 0%;
   margin-left: 20px;
   border: solid 2px;
-  width: 95%;
+  width: 90%;
   height: inherit;
+  min-height: 340px;
+  min-width: 330px;
   padding: 10 px;
   text-align: center;
   box-shadow: 10px 10px 8px #888888;
   align-items: center;
   margin: 50px; }
   .card-2 img {
-    margin: 1.5rem;
+    margin: 1rem;
     float: left; }
   .card-2 p {
     margin: 0.8rem; }
@@ -510,8 +483,9 @@ body {
 .reciepesTitle {
   grid-area: reicipeTitle; }
 
-.reciepeCard {
-  text-decoration: none !important; }
+.reciepeCard a {
+  text-decoration: none !important;
+  color: white; }
 
 .reciepeCards {
   grid-area: reicipeCards; }
@@ -520,7 +494,6 @@ body {
   grid-area: reiciepeWallpaper; }
 
 .reciepe {
-  text-decoration: none !important;
   font-family: 'Outfit', sans-serif;
   width: 90vw;
   height: fit-content;
@@ -530,6 +503,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #4d7274; }
+  .reciepe a {
+    text-decoration: none !important;
+    color: white; }
   .reciepe .reciepeFlex {
     display: flex;
     flex-direction: row;
@@ -556,3 +532,13 @@ body {
   .btn:hover {
     background-color: #9c1458;
     border-color: #9c1458; }
+
+.vidaDetoxContainer {
+  font-family: 'Outfit', sans-serif; }
+
+.detoxContainer {
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem; }
+  .detoxContainer img {
+    width: 20rem; }

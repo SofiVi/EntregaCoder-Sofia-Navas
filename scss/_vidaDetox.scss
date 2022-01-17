@@ -1,0 +1,19 @@
+.vidaDetoxContainer{
+    font-family: 'Outfit', sans-serif;
+}
+
+.detoxContainer{
+    @extend.calendarCard;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem;
+    img{
+        width: 20rem;
+    }
+}
+
+
+.detoxTitle{
+    @extend.calendarTitle;
+    
+}

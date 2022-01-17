@@ -5,88 +5,29 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Outfit', sans-serif;
     line-height: 1.4;
     background-color: #efefef;
 }
 
 :root{
     --menu-speed:0.75s;
-    --primary-color: rgba(247, 200, 201, 0.644);
+    --primary-color: rgba(247, 200, 201, 0.808);
     --overlay-color: rgba(24, 39, 51, 0.85);
 }
 
-
-
-/*@media screen and (max-width: 600px) {
-        
-       
-        .indexContainer {
-            padding: 0px;
-            display: grid;
-            padding: 0px;
-            margin: 0%;
-            width: 100vw;
-            grid-template-columns: repeat(2, auto);
-            grid-template-areas:
-        
-           "indexWallpaper indexWallpaper"
-           "detoxLife detoxLife"
-           "superfoods superfoods"
-           "footer footer"; 
-         }
-
-        .calendarioContainer{
-
-            padding: 0px;
-            display: grid;
-            padding: 0px;
-            margin: 0%;
-            width: 100vw;
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(4,auto);
-            grid-template-areas:
-        
-           
-           "calendarWallpaper calendarWallpaper"
-           "calendarTitle calendarTitle"
-           "calendarCards calendarCards"
-           "footer footer"; 
-            
-        }
-
-        .consejosContainer{
-
-            .card-1{
-                flex-wrap: wrap;
-                img {
-                    margin: 1.5rem;
-                    width: 3rem;
-                    
-            
-             }
-        
-            }
-            .card-2 {
-                flex-wrap: wrap;
-                img {
-                    margin: 1.5rem;
-                    width: 3rem;
-                    
-             }
-            
-            }
-        }
-
-        
-    } */
+.header3{
+    grid-area: header3;
+}
 
     @media screen  and  (max-width: 1023px) {
+
 
             .header2 {
             display: none; }
 
             .indexContainer {
+                font-family: 'Outfit', sans-serif;
                 padding: 0px;
                 display: grid;
                 padding: 0px;
@@ -94,7 +35,7 @@ body {
                 width: 100vw;
                 grid-template-columns: repeat(2, auto);
                 grid-template-areas:
-            
+                "header3 header3"
                "indexWallpaper indexWallpaper"
                "detoxLife detoxLife"
                "superfoods superfoods"
@@ -102,16 +43,17 @@ body {
              }
 
              .calendarioContainer{
+                font-family: 'Outfit', sans-serif;
                 padding: 0px;
                 display: grid;
                 padding: 0px;
                 margin: 0%;
                 width: 100vw;
                 grid-template-columns: repeat(2, auto);
-                grid-template-rows: repeat(4,auto);
+                grid-template-rows: repeat(5,auto);
                 grid-template-areas:
             
-               
+               "header3 header3"
                "calendarWallpaper calendarWallpaper"
                "calendarTitle calendarTitle"
                "calendarCards calendarCards"
@@ -119,6 +61,7 @@ body {
              }
 
              .consejosContainer{
+                font-family: 'Outfit', sans-serif;
 
         
 
@@ -145,16 +88,17 @@ body {
 
 
             .recetasContainer{
+                font-family: 'Outfit', sans-serif;
                 padding: 0px;
                 display: grid;
                 padding: 0px;
                 margin: 0%;
                 width: 100vw;
                 grid-template-columns: repeat(2, auto);
-                grid-template-rows: repeat(4,auto);
+                grid-template-rows: repeat(5,auto);
                 grid-template-areas:
             
-               
+               "header3 header3"
                "reiciepeWallpaper reiciepeWallpaper"
                "reicipeTitle reicipeTitle"
                "reicipeCards reicipeCards"
@@ -166,10 +110,16 @@ body {
      
   
   @media screen and (min-width: 1024px) {
+
+    .header3{
+            display: none;
+    }
+
     .menuWrap{
         display: none;
     }
     .indexContainer {
+        font-family: 'Outfit', sans-serif;
    
         padding: 0px;
         display: grid;
@@ -194,6 +144,7 @@ body {
     }
 
     .calendarioContainer{
+        font-family: 'Outfit', sans-serif;
         padding: 0px;
         display: grid;
         padding: 0px;
@@ -209,6 +160,7 @@ body {
         "footer footer footer"; 
     }
     .consejosContainer{
+        font-family: 'Outfit', sans-serif;
 
         .card-1{
             display: flex;
@@ -235,6 +187,7 @@ body {
 
 
   .recetasContainer{
+    font-family: 'Outfit', sans-serif;
     padding: 0px;
     display: grid;
     padding: 0px;
@@ -251,3 +204,5 @@ body {
 }
 
   }
+
+  

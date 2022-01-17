@@ -6,24 +6,29 @@ $color2: rgb(237, 212, 240);
 $borderColor2:rgb(172, 145, 187);
 
 
+
 @mixin cardStyle ($bg, $color,$borderColor){
     background-color: $bg;
     color: $color;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 0%;
     margin-left: 20px;
     border: solid 2px;
-    width: 95%;
-    height:inherit;
+    width: 90%;
+    height: inherit;
+    min-height: 340px;
+    min-width: 330px;
     padding: 10 px;
     text-align: center;
     box-shadow: 10px 10px 8px #888888;
     align-items: center;
     margin: 50px;
+    
 
     img {
-        margin: 1.5rem;
+        margin: 1rem;
         float: left;
+        
  }
     p{
         
