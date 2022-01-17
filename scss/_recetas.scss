@@ -5,8 +5,11 @@
 
 .reciepeCard{
     @extend.calendarCard;
+
+    a{
     text-decoration: none !important;
-    margin-right: 10px;
+    color: white;
+    }
     
 }
 
@@ -22,7 +25,6 @@
 
 .reciepe{
     @extend.calendarCard;
-    text-decoration: none !important;
     font-family: 'Outfit', sans-serif;
     width: 90vw;
     height:fit-content;
@@ -32,6 +34,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(77, 114, 116);
+    a{
+        text-decoration: none !important;
+        color: white;
+        }
     
     .reciepeFlex{
         display: flex;
