@@ -1,0 +1,76 @@
+.reciepesTitle{
+    @extend.calendarTitle;
+    grid-area: reicipeTitle;
+}
+
+.reciepeCard{
+    @extend.calendarCard;
+    text-decoration: none !important;
+    
+}
+
+.reciepeCards{
+    @extend.calendarCards;
+    grid-area: reicipeCards;
+}
+
+.reciepeWallpaper{
+    grid-area: reiciepeWallpaper;
+}
+
+
+.reciepe{
+    @extend.calendarCard;
+    text-decoration: none !important;
+    font-family: 'Outfit', sans-serif;
+    width: 90vw;
+    height:fit-content;
+    padding: 20px;
+    margin: 30px;
+    background-image: url("../img/reciepeBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(77, 114, 116);
+    
+    .reciepeFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+        margin-top: 1rem;      
+        
+    }
+
+    h3{
+        margin-top: 1rem;
+    }
+    
+    li{
+        list-style: none;
+        color: rgb(75, 139, 141);
+        font-weight: bolder;
+        margin: 0.5rem;
+    }
+    
+    
+}
+
+.btn {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #800040;
+    color: white;
+    border: 1px solid #800040;
+    margin: 0 1rem;
+    
+
+     &:hover{
+        background-color: #9c1458;
+        border-color: #9c1458;
+        
+      }
+  }
+
+  

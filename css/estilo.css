@@ -249,7 +249,16 @@ body {
   .consejosContainer .card-2 img {
     margin: 0.2rem;
     width: 20rem;
-    float: left; } }
+    float: left; }
+  .recetasContainer {
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle" "reicipeCards reicipeCards" "footer footer"; } }
 
 @media screen and (min-width: 1024px) {
   .menuWrap {
@@ -284,7 +293,15 @@ body {
     display: flex; }
     .consejosContainer .card-2 img {
       margin: 0.2rem;
-      width: 20rem; } }
+      width: 20rem; }
+  .recetasContainer {
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "gridHeader gridHeader gridHeader" "reiciepeWallpaper reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle reicipeTitle" "reicipeCards reicipeCards reicipeCards" "footer footer footer"; } }
 
 * {
   margin: 0;
@@ -403,7 +420,7 @@ body {
 .calendarWallpaper {
   grid-area: calendarWallpaper; }
 
-.calendarTitle {
+.calendarTitle, .reciepesTitle {
   grid-area: calendarTitle;
   display: flex;
   flex-direction: row;
@@ -413,7 +430,7 @@ body {
   align-items: center;
   margin: 50px; }
 
-.calendarCard {
+.calendarCard, .reciepeCard, .reciepe {
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
@@ -428,13 +445,13 @@ body {
   text-align: center;
   background-color: aliceblue;
   box-shadow: 10px 10px 8px #888888; }
-  .calendarCard img {
+  .calendarCard img, .reciepeCard img, .reciepe img {
     margin: 15px; }
-  .calendarCard p {
+  .calendarCard p, .reciepeCard p, .reciepe p {
     size: 2rem;
     margin: 15px; }
 
-.calendarCards {
+.calendarCards, .reciepeCards {
   grid-area: calendarCards;
   display: flex;
   flex-direction: row;
@@ -489,3 +506,53 @@ body {
   color: #8faac2;
   text-align: center;
   margin-top: 15px; }
+
+.reciepesTitle {
+  grid-area: reicipeTitle; }
+
+.reciepeCard {
+  text-decoration: none !important; }
+
+.reciepeCards {
+  grid-area: reicipeCards; }
+
+.reciepeWallpaper {
+  grid-area: reiciepeWallpaper; }
+
+.reciepe {
+  text-decoration: none !important;
+  font-family: 'Outfit', sans-serif;
+  width: 90vw;
+  height: fit-content;
+  padding: 20px;
+  margin: 30px;
+  background-image: url("../img/reciepeBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #4d7274; }
+  .reciepe .reciepeFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem; }
+  .reciepe h3 {
+    margin-top: 1rem; }
+  .reciepe li {
+    list-style: none;
+    color: #4b8b8d;
+    font-weight: bolder;
+    margin: 0.5rem; }
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #800040;
+  color: white;
+  border: 1px solid #800040;
+  margin: 0 1rem; }
+  .btn:hover {
+    background-color: #9c1458;
+    border-color: #9c1458; }
