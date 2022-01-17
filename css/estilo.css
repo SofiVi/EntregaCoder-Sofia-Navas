@@ -511,7 +511,8 @@ body {
   grid-area: reicipeTitle; }
 
 .reciepeCard {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  margin-right: 10px; }
 
 .reciepeCards {
   grid-area: reicipeCards; }

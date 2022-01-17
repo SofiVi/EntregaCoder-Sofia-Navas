@@ -763,6 +763,7 @@ body {
 
 .reciepeCard {
   text-decoration: none !important;
+  margin-right: 10px;
 }
 
 .reciepeCards {
