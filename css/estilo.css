@@ -181,7 +181,7 @@ body {
 .header3 {
   grid-area: header3; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .header2 {
     display: none; }
   .indexContainer {
@@ -193,6 +193,16 @@ body {
     width: 100vw;
     grid-template-columns: repeat(2, auto);
     grid-template-areas: "header3 header3" "indexWallpaper indexWallpaper" "detoxLife detoxLife" "superfoods superfoods" "footer footer"; }
+    .indexContainer .indexWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .indexContainer .indexWallpaper img {
+        width: 100%; }
+    .indexContainer .container img {
+      width: 200px; }
+    .indexContainer .container2 img {
+      width: 200px; }
   .calendarioContainer {
     font-family: 'Outfit', sans-serif;
     padding: 0px;
@@ -203,6 +213,18 @@ body {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header3 header3" "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; }
+    .calendarioContainer .calendarWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .calendarioContainer .calendarWallpaper img {
+        width: 100%; }
+    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .detoxContainer {
+      max-width: 300px;
+      height: fit-content;
+      margin: 10px; }
+      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .detoxContainer img {
+        width: 230px; }
   .consejosContainer {
     font-family: 'Outfit', sans-serif; }
     .consejosContainer .card-1 {
@@ -226,9 +248,105 @@ body {
     width: 100vw;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: "header3 header3" "reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle" "reicipeCards reicipeCards" "footer footer"; } }
+    grid-template-areas: "header3 header3" "reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle" "reicipeCards reicipeCards" "footer footer"; }
+    .recetasContainer .reciepeWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .recetasContainer .reciepeWallpaper img {
+        width: 100%; }
+    .recetasContainer .reciepeCard {
+      max-width: 300px;
+      height: fit-content;
+      margin: 10px; }
+      .recetasContainer .reciepeCard img {
+        width: 230px; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header2 {
+    display: none; }
+  .indexContainer {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: " header3 header3 " "indexWallpaper indexWallpaper " "detoxLife detoxLife" "superfoods superfoods" "footer footer "; }
+    .indexContainer .indexWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .indexContainer .indexWallpaper img {
+        width: 100%; }
+    .indexContainer .container img {
+      width: 30rem; }
+    .indexContainer .container2 img {
+      width: 200px; }
+  .indexWallpaper {
+    width: 100%; }
+  .calendarWallpaper {
+    width: 100%; }
+  .calendarioContainer {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "header3 header3" "calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle " "calendarCards calendarCards " "footer footer "; }
+    .calendarioContainer .calendarWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .calendarioContainer .calendarWallpaper img {
+        width: 100%; }
+    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .detoxContainer {
+      max-width: 300px;
+      height: fit-content;
+      margin: 10px; }
+      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .detoxContainer img {
+        width: 230px; }
+  .consejosContainer {
+    font-family: 'Outfit', sans-serif; }
+    .consejosContainer .card-1 {
+      width: fit-content; }
+      .consejosContainer .card-1 img {
+        margin: 0.2rem;
+        width: 15rem;
+        float: left; }
+    .consejosContainer .card-2 {
+      width: fit-content; }
+      .consejosContainer .card-2 img {
+        margin: 0.2rem;
+        width: 15rem;
+        float: left; }
+  .recetasContainer {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: " header3 header3 " "reiciepeWallpaper reiciepeWallpaper " "reicipeTitle reicipeTitle " "reicipeCards reicipeCards " "footer footer "; }
+    .recetasContainer .reciepeWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .recetasContainer .reciepeWallpaper img {
+        width: 100%; }
+    .recetasContainer .reciepeCard {
+      max-width: 300px;
+      height: fit-content;
+      margin: 10px; }
+      .recetasContainer .reciepeCard img {
+        width: 230px; } }
+
+@media screen and (min-width: 1025px) {
   .header3 {
     display: none; }
   .menuWrap {
@@ -243,10 +361,6 @@ body {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "gridHeader gridHeader gridHeader" "indexWallpaper indexWallpaper indexWallpaper " "detoxLife superfoods superfoods" "footer footer footer"; }
-  .indexWallpaper {
-    width: 100%; }
-  .calendarWallpaper {
-    width: 100%; }
   .calendarioContainer {
     font-family: 'Outfit', sans-serif;
     padding: 0px;
@@ -254,8 +368,21 @@ body {
     padding: 0px;
     margin: 0%;
     width: 100vw;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(5, auto);
-    grid-template-areas: "gridHeader gridHeader gridHeader" "calendarWallpaper calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle calendarTitle" "calendarCards calendarCards calendarCards" "footer footer footer"; }
+    grid-template-areas: "gridHeader  gridHeader " "calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle " "calendarCards calendarCards " "footer footer "; }
+    .calendarioContainer .calendarWallpaper {
+      display: flex;
+      justify-content: center;
+      align-content: space-between; }
+      .calendarioContainer .calendarWallpaper img {
+        width: 100%; }
+    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .detoxContainer {
+      max-width: 30rem;
+      height: fit-content;
+      margin: 10px; }
+      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .detoxContainer img {
+        width: 250px; }
   .consejosContainer {
     font-family: 'Outfit', sans-serif; }
     .consejosContainer .card-1 {
@@ -277,6 +404,61 @@ body {
     width: 100vw;
     grid-template-columns: repeat(5, auto);
     grid-template-areas: "gridHeader gridHeader gridHeader" "reiciepeWallpaper reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle reicipeTitle" "reicipeCards reicipeCards reicipeCards" "footer footer footer"; } }
+
+@media screen and (min-width: 1025px) {
+  .header3 {
+    display: none; }
+  .menuWrap {
+    display: none; }
+  .indexContainer {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "gridHeader gridHeader gridHeader" "indexWallpaper indexWallpaper indexWallpaper " "detoxLife superfoods superfoods" "footer footer footer"; }
+    .indexContainer .indexWallpaper {
+      height: fit-content; }
+      .indexContainer .indexWallpaper img {
+        width: 100%; }
+  .calendarioContainer {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "gridHeader gridHeader gridHeader" "calendarWallpaper calendarWallpaper calendarWallpaper " "calendarTitle calendarTitle calendarTitle" "calendarCards calendarCards calendarCards" "footer footer footer"; }
+    .calendarioContainer .calendarWallpaper img {
+      width: 100%; }
+  .consejosContainer {
+    font-family: 'Outfit', sans-serif; }
+    .consejosContainer .card-1 {
+      display: flex; }
+      .consejosContainer .card-1 img {
+        margin: 0.2rem;
+        width: 20rem; }
+    .consejosContainer .card-2 {
+      display: flex; }
+      .consejosContainer .card-2 img {
+        margin: 0.2rem;
+        width: 20rem; }
+  .recetasContainer {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    display: grid;
+    padding: 0px;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "gridHeader gridHeader gridHeader" "reiciepeWallpaper reiciepeWallpaper reiciepeWallpaper" "reicipeTitle reicipeTitle reicipeTitle" "reicipeCards reicipeCards reicipeCards" "footer footer footer"; }
+    .recetasContainer .reciepeWallpaper img {
+      width: 100%; } }
 
 * {
   margin: 0;
@@ -431,8 +613,7 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
-  align-items: center;
-  margin: 50px; }
+  align-items: center; }
 
 .consejosContainer {
   align-items: center; }
