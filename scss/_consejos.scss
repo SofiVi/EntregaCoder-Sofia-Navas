@@ -5,7 +5,9 @@ $bg2: rgb(186, 156, 201);
 $color2: rgb(237, 212, 240);
 $borderColor2:rgb(172, 145, 187);
 
-
+.consejosContainer{
+    align-items: center;
+}
 
 @mixin cardStyle ($bg, $color,$borderColor){
     background-color: $bg;
@@ -14,20 +16,21 @@ $borderColor2:rgb(172, 145, 187);
     margin-right: 0%;
     margin-left: 20px;
     border: solid 2px;
-    width: 90%;
+    width: 98%;
     height: inherit;
     min-height: 340px;
-    min-width: 330px;
+    
     padding: 10 px;
     text-align: center;
     box-shadow: 10px 10px 8px #888888;
     align-items: center;
-    margin: 50px;
+    margin: 10px;
     
 
     img {
-        margin: 1rem;
+        
         float: left;
+        
         
  }
     p{

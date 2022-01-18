@@ -152,7 +152,7 @@
   top: 0;
   left: 60px;
   z-index: 1;
-  width: 100%;
+  width: 50%;
   height: 5rem;
   padding: 2rem;
   background-image: url(../img/logo.png);
@@ -205,14 +205,18 @@ body {
     grid-template-areas: "header3 header3" "calendarWallpaper calendarWallpaper" "calendarTitle calendarTitle" "calendarCards calendarCards" "footer footer"; }
   .consejosContainer {
     font-family: 'Outfit', sans-serif; }
-    .consejosContainer .card-1 img {
-      margin: 0.2rem;
-      width: 20rem;
-      float: left; }
-    .consejosContainer .card-2 img {
-      margin: 0.2rem;
-      width: 20rem;
-      float: left; }
+    .consejosContainer .card-1 {
+      width: fit-content; }
+      .consejosContainer .card-1 img {
+        margin: 0.2rem;
+        width: 10rem;
+        float: left; }
+    .consejosContainer .card-2 {
+      width: fit-content; }
+      .consejosContainer .card-2 img {
+        margin: 0.2rem;
+        width: 10rem;
+        float: left; }
   .recetasContainer {
     font-family: 'Outfit', sans-serif;
     padding: 0px;
@@ -324,7 +328,7 @@ body {
 
 .footer {
   grid-area: footer;
-  position: initial;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -430,6 +434,9 @@ body {
   align-items: center;
   margin: 50px; }
 
+.consejosContainer {
+  align-items: center; }
+
 .card-1 {
   background-color: #8faac2;
   color: aliceblue;
@@ -437,17 +444,15 @@ body {
   margin-right: 0%;
   margin-left: 20px;
   border: solid 2px;
-  width: 90%;
+  width: 98%;
   height: inherit;
   min-height: 340px;
-  min-width: 330px;
   padding: 10 px;
   text-align: center;
   box-shadow: 10px 10px 8px #888888;
   align-items: center;
-  margin: 50px; }
+  margin: 10px; }
   .card-1 img {
-    margin: 1rem;
     float: left; }
   .card-1 p {
     margin: 0.8rem; }
@@ -459,17 +464,15 @@ body {
   margin-right: 0%;
   margin-left: 20px;
   border: solid 2px;
-  width: 90%;
+  width: 98%;
   height: inherit;
   min-height: 340px;
-  min-width: 330px;
   padding: 10 px;
   text-align: center;
   box-shadow: 10px 10px 8px #888888;
   align-items: center;
-  margin: 50px; }
+  margin: 10px; }
   .card-2 img {
-    margin: 1rem;
     float: left; }
   .card-2 p {
     margin: 0.8rem; }
@@ -541,4 +544,4 @@ body {
   height: fit-content;
   margin: 1rem; }
   .detoxContainer img {
-    width: 20rem; }
+    width: 70%; }
