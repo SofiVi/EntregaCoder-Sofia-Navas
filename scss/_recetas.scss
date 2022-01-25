@@ -16,6 +16,12 @@
 .reciepeCards{
     @extend.calendarCards;
     grid-area: reicipeCards;
+        h1{
+            margin: 10px;
+        }
+        p{
+            margin: 10px;
+        }
 }
 
 .reciepeWallpaper{

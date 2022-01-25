@@ -659,6 +659,10 @@ body {
 
 .reciepeCards {
   grid-area: reicipeCards; }
+  .reciepeCards h1 {
+    margin: 10px; }
+  .reciepeCards p {
+    margin: 10px; }
 
 .reciepeWallpaper {
   grid-area: reiciepeWallpaper; }
