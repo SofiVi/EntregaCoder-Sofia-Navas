@@ -704,7 +704,7 @@ body {
     text-decoration: none !important;
     color: white; }
   .reciepe img {
-    width: 50%; }
+    width: 200px; }
   .reciepe .reciepeFlex {
     display: flex;
     flex-direction: column;
