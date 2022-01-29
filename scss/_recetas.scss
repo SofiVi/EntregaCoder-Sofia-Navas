@@ -1,10 +1,23 @@
 .reciepesTitle{
     @extend.calendarTitle;
     grid-area: reicipeTitle;
+    p{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
 }
 
 .reciepeCard{
     @extend.calendarCard;
+    height: fit-content;
+   
+    .btn{
+        margin: 1rem;
+    }
+
+    img{
+        width: 22rem;
+    }
 
     a{
     text-decoration: none !important;
@@ -36,10 +49,10 @@
 .reciepe{
     @extend.calendarCard;
     font-family: 'Outfit', sans-serif;
-    width: 90vw;
+    width: 97vw;
     height:fit-content;
     padding: 20px;
-    margin: 30px;
+    margin: 1rem;
     background-image: url("../img/reciepeBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,25 +61,35 @@
         text-decoration: none !important;
         color: white;
         }
+
+    img{
+        width: auto;
+    }
     
     .reciepeFlex{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;  
         margin-top: 1rem;      
         
     }
+    h2{
+        color:rgb(42, 75, 77);
+        margin: 1rem;
+    }
 
     h3{
         margin-top: 1rem;
+        color:rgb(42, 75, 77);
+        
     }
     
     li{
         list-style: none;
         color: rgb(75, 139, 141);
         font-weight: bolder;
-        margin: 0.5rem;
+        margin: 1rem;
     }
     
     

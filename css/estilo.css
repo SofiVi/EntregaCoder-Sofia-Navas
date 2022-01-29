@@ -117,7 +117,7 @@
   background-image: url(../img/logo.png);
   background-size: 10rem;
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: left;
   display: flex;
   align-items: center;
   font-style: normal;
@@ -203,11 +203,11 @@ body {
       align-content: space-between; }
       .calendarioContainer .calendarWallpaper img {
         width: 100%; }
-    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .detoxContainer {
+    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .vidaDetoxContainer .detoxContainer, .vidaDetoxContainer .calendarioContainer .detoxContainer {
       max-width: 300px;
       height: fit-content;
       margin: 10px; }
-      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .detoxContainer img {
+      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .vidaDetoxContainer .detoxContainer img, .vidaDetoxContainer .calendarioContainer .detoxContainer img {
         width: 230px; }
   .consejosContainer {
     font-family: 'Outfit', sans-serif; }
@@ -288,11 +288,11 @@ body {
       align-content: space-between; }
       .calendarioContainer .calendarWallpaper img {
         width: 100%; }
-    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .detoxContainer {
+    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .vidaDetoxContainer .detoxContainer, .vidaDetoxContainer .calendarioContainer .detoxContainer {
       max-width: 300px;
       height: fit-content;
       margin: 10px; }
-      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .detoxContainer img {
+      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .vidaDetoxContainer .detoxContainer img, .vidaDetoxContainer .calendarioContainer .detoxContainer img {
         width: 230px; }
   .consejosContainer {
     font-family: 'Outfit', sans-serif; }
@@ -361,11 +361,11 @@ body {
       align-content: space-between; }
       .calendarioContainer .calendarWallpaper img {
         width: 100%; }
-    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .detoxContainer {
+    .calendarioContainer .calendarCard, .calendarioContainer .reciepeCard, .calendarioContainer .reciepe, .calendarioContainer .vidaDetoxContainer .detoxContainer, .vidaDetoxContainer .calendarioContainer .detoxContainer {
       max-width: 30rem;
       height: fit-content;
       margin: 10px; }
-      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .detoxContainer img {
+      .calendarioContainer .calendarCard img, .calendarioContainer .reciepeCard img, .calendarioContainer .reciepe img, .calendarioContainer .vidaDetoxContainer .detoxContainer img, .vidaDetoxContainer .calendarioContainer .detoxContainer img {
         width: 250px; }
   .consejosContainer {
     font-family: 'Outfit', sans-serif; }
@@ -557,11 +557,13 @@ body {
 
 .calendarioContainer {
   display: grid; }
+  .calendarioContainer h3 {
+    margin: 1rem; }
 
 .calendarWallpaper {
   grid-area: calendarWallpaper; }
 
-.calendarTitle, .reciepesTitle, .detoxTitle {
+.calendarTitle, .reciepesTitle, .vidaDetoxContainer .detoxTitle {
   grid-area: calendarTitle;
   display: flex;
   flex-direction: row;
@@ -570,8 +572,11 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 50px; }
+  .calendarTitle p, .reciepesTitle p, .vidaDetoxContainer .detoxTitle p {
+    margin-top: 1rem;
+    font-size: 1.2rem; }
 
-.calendarCard, .reciepeCard, .reciepe, .detoxContainer {
+.calendarCard, .reciepeCard, .reciepe, .vidaDetoxContainer .detoxContainer {
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
@@ -586,9 +591,9 @@ body {
   text-align: center;
   background-color: aliceblue;
   box-shadow: 10px 10px 8px #888888; }
-  .calendarCard img, .reciepeCard img, .reciepe img, .detoxContainer img {
+  .calendarCard img, .reciepeCard img, .reciepe img, .vidaDetoxContainer .detoxContainer img {
     margin: 15px; }
-  .calendarCard p, .reciepeCard p, .reciepe p, .detoxContainer p {
+  .calendarCard p, .reciepeCard p, .reciepe p, .vidaDetoxContainer .detoxContainer p {
     size: 2rem;
     margin: 15px; }
 
@@ -652,10 +657,19 @@ body {
 
 .reciepesTitle {
   grid-area: reicipeTitle; }
+  .reciepesTitle p {
+    font-size: 1.2rem;
+    margin: 1rem; }
 
-.reciepeCard a {
-  text-decoration: none !important;
-  color: white; }
+.reciepeCard {
+  height: fit-content; }
+  .reciepeCard .btn {
+    margin: 1rem; }
+  .reciepeCard img {
+    width: 22rem; }
+  .reciepeCard a {
+    text-decoration: none !important;
+    color: white; }
 
 .reciepeCards {
   grid-area: reicipeCards; }
@@ -672,10 +686,10 @@ body {
 
 .reciepe {
   font-family: 'Outfit', sans-serif;
-  width: 90vw;
+  width: 97vw;
   height: fit-content;
   padding: 20px;
-  margin: 30px;
+  margin: 1rem;
   background-image: url("../img/reciepeBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -683,19 +697,25 @@ body {
   .reciepe a {
     text-decoration: none !important;
     color: white; }
+  .reciepe img {
+    width: auto; }
   .reciepe .reciepeFlex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1rem; }
+  .reciepe h2 {
+    color: #2a4b4d;
+    margin: 1rem; }
   .reciepe h3 {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    color: #2a4b4d; }
   .reciepe li {
     list-style: none;
     color: #4b8b8d;
     font-weight: bolder;
-    margin: 0.5rem; }
+    margin: 1rem; }
 
 .btn {
   font: inherit;
@@ -712,11 +732,28 @@ body {
 
 .vidaDetoxContainer {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.1rem; }
-
-.detoxContainer {
-  width: fit-content;
-  height: fit-content;
-  margin: 1rem; }
-  .detoxContainer img {
-    width: 50%; }
+  font-size: 1.1rem;
+  align-items: center;
+  justify-items: center; }
+  .vidaDetoxContainer .detoxContainer {
+    width: 95%;
+    height: fit-content;
+    position: relative;
+    padding: 1rem; }
+    .vidaDetoxContainer .detoxContainer img {
+      width: 30%;
+      min-width: 200px;
+      float: left;
+      margin-top: 3rem;
+      margin-right: 0.5rem; }
+    .vidaDetoxContainer .detoxContainer h2 {
+      margin-top: 3rem;
+      margin-left: 0.5rem; }
+    .vidaDetoxContainer .detoxContainer p {
+      margin: 2rem;
+      padding-left: 2rem;
+      font-size: 1.2rem; }
+  .vidaDetoxContainer .detoxTitle {
+    margin: 2rem; }
+    .vidaDetoxContainer .detoxTitle p {
+      margin-top: 1rem; }

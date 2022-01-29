@@ -1,5 +1,8 @@
 .calendarioContainer{
     display: grid;
+    h3{
+        margin: 1rem;
+    }
 }
 
 .calendarWallpaper{
@@ -15,6 +18,10 @@
     justify-content: space-around;
     align-items: center;
     margin: 50px;
+    p{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
 }
 
 .calendarCard{

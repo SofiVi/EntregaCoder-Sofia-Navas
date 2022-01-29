@@ -1,20 +1,46 @@
 .vidaDetoxContainer{
     font-family: 'Outfit', sans-serif;
     font-size: 1.1rem;
-}
+    align-items: center;
+    justify-items: center;
 
-.detoxContainer{
-    @extend.calendarCard;
-    width: fit-content;
-    height: fit-content;
-    margin: 1rem;
-    img{
-        width: 50%;
+    .detoxContainer{
+        @extend.calendarCard;
+        width: 95%;
+        height: fit-content;
+        position: relative;
+        padding: 1rem;
+
+        img{
+            width: 30%;
+            min-width: 200px;
+            float: left;
+            margin-top: 3rem;
+            margin-right: 0.5rem;
+        }
+    
+        h2{
+            margin-top: 3rem;
+            margin-left: 0.5rem;
+        }
+    
+        p{
+            margin: 2rem;
+            padding-left: 2rem;
+            font-size: 1.2rem;
+        }
     }
-}
 
-
-.detoxTitle{
+    .detoxTitle{
     @extend.calendarTitle;
+    margin:2rem;
+    p{
+        margin-top:1rem;
+    }
     
 }
+    
+}
+
+
+

@@ -19,7 +19,6 @@ $borderColor2:rgb(172, 145, 187);
     width: 98%;
     height: inherit;
     min-height: 340px;
-    
     padding: 10 px;
     text-align: center;
     box-shadow: 10px 10px 8px #888888;
@@ -41,11 +40,11 @@ $borderColor2:rgb(172, 145, 187);
 }
 
 .card-1{
-    @include cardStyle($bg1, $color1,$borderColor1)
+    @include cardStyle($bg1, $color1,$borderColor1);
 }
 
 .card-2{
-    @include cardStyle($bg2, $color2,$borderColor2)
+    @include cardStyle($bg2, $color2,$borderColor2);
 }
 
 .consejosTitle{
