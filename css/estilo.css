@@ -612,6 +612,7 @@ body {
 .card-1 {
   background-color: #8faac2;
   color: aliceblue;
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 0%;
   margin-left: 20px;
@@ -628,10 +629,13 @@ body {
     float: left; }
   .card-1 p {
     margin: 0.8rem; }
+  .card-1 h3 {
+    margin-top: 20px; }
 
 .card-2 {
   background-color: #ba9cc9;
   color: #edd4f0;
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 0%;
   margin-left: 20px;
@@ -648,6 +652,8 @@ body {
     float: left; }
   .card-2 p {
     margin: 0.8rem; }
+  .card-2 h3 {
+    margin-top: 20px; }
 
 .consejosTitle {
   size: inherit;
